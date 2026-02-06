@@ -1,50 +1,90 @@
-# Welcome to your Expo app 👋
+# Expo + NativeWind v5
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern [Expo](https://expo.dev) project with [NativeWind v5](https://www.nativewind.dev/) and [Tailwind CSS v4](https://tailwindcss.com/), featuring file-based routing and automatic theming.
 
-## Get started
+## Tech Stack
 
-1. Install dependencies
+- **Expo ~54.0** - Universal React Native development platform
+- **React 19.1.0** - Latest React with React Compiler enabled
+- **NativeWind v5 (preview)** - Tailwind CSS for React Native
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **Expo Router ~6.0** - File-based routing
+- **TypeScript** - Type safety
+- **React Native New Architecture** - Enabled by default
+
+## Features
+
+- Automatic dark/light theme switching based on system preferences
+- Custom theme system with CSS variables
+- File-based routing with Expo Router
+- TypeScript support
+- HugeIcons integration
+- Automated Android emulator startup
+
+## Get Started
+
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Start the development server**
 
    ```bash
-   npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+3. **Run on your platform**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   - **iOS**: `npm run ios`
+   - **Android**: `npm run android` (automatically starts emulator if needed)
+   - **Web**: `npm run web`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
+```
+├── app/                    # File-based routing
+│   ├── _layout.tsx        # Root layout with theme provider
+│   └── index.tsx          # Home screen
+├── assets/                # Images, fonts, and other assets
+├── utils/                 # Utilities and configuration
+│   └── theme.ts           # Light/dark theme definitions
+├── scripts/               # Custom scripts
+│   └── start-android.sh   # Android emulator startup script
+├── global.css             # Tailwind CSS and NativeWind styles
+└── app.json               # Expo configuration
 
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Theming
 
-## Learn more
+This project uses a custom theme system with CSS variables:
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Light/Dark mode**: Automatically switches based on system preferences
+- **Theme variables**: Defined in `utils/theme.ts`
+- **CSS variables**: Used in `global.css` via NativeWind
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+To customize the theme, edit the color values in `utils/theme.ts`.
 
-## Join the community
+## Available Scripts
 
-Join our community of developers creating universal apps.
+- `npm start` - Start Expo development server
+- `npm run android` - Start on Android (with automatic emulator launch)
+- `npm run android:manual` - Start on Android without emulator auto-launch
+- `npm run ios` - Start on iOS simulator
+- `npm run web` - Start web version
+- `npm run lint` - Run ESLint
+- `npm run reset-project` - Reset to a blank project
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Learn More
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [NativeWind v5 Documentation](https://www.nativewind.dev/)
+- [Tailwind CSS v4 Documentation](https://tailwindcss.com/)
+- [Expo Router Documentation](https://docs.expo.dev/router/introduction/)
+
+## Community
+
+- [Expo GitHub](https://github.com/expo/expo)
+- [Expo Discord](https://chat.expo.dev)
