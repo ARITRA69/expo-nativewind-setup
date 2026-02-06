@@ -9,11 +9,7 @@
     "android:manual": "expo start --android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "lint": "expo lint",
-    "docker:setup": "bash ./scripts/docker-setup-adb.sh",
-    "docker:dev": "docker-compose up",
-    "docker:build": "docker-compose build",
-    "docker:down": "docker-compose down"
+    "lint": "expo lint"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
