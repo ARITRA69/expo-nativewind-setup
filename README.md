@@ -26,20 +26,20 @@ A modern [Expo](https://expo.dev) project with [NativeWind v5](https://www.nativ
 1. **Install dependencies**
 
    ```bash
-   npm install
+   bun install
    ```
 
 2. **Start the development server**
 
    ```bash
-   npm start
+   bun start
    ```
 
 3. **Run on your platform**
 
-   - **iOS**: `npm run ios`
-   - **Android**: `npm run android` (automatically starts emulator if needed)
-   - **Web**: `npm run web`
+   - **iOS**: `bun run ios`
+   - **Android**: `bun run android` (automatically starts emulator if needed)
+   - **Web**: `bun run web`
 
 ## Project Structure
 
@@ -69,13 +69,13 @@ To customize the theme, edit the color values in `utils/theme.ts`.
 
 ## Available Scripts
 
-- `npm start` - Start Expo development server
-- `npm run android` - Start on Android (with automatic emulator launch)
-- `npm run android:manual` - Start on Android without emulator auto-launch
-- `npm run ios` - Start on iOS simulator
-- `npm run web` - Start web version
-- `npm run lint` - Run ESLint
-- `npm run reset-project` - Reset to a blank project
+- `bun start` - Start Expo development server
+- `bun run android` - Start on Android (with automatic emulator launch)
+- `bun run android:manual` - Start on Android without emulator auto-launch
+- `bun run ios` - Start on iOS simulator
+- `bun run web` - Start web version
+- `bun run lint` - Run ESLint
+- `bun run reset-project` - Reset to a blank project
 
 ## Learn More
 
