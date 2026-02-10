@@ -36,7 +36,6 @@ A modern [Expo](https://expo.dev) project with [NativeWind v5](https://www.nativ
    ```
 
 3. **Run on your platform**
-
    - **iOS**: `bun run ios`
    - **Android**: `bun run android` (automatically starts emulator if needed)
    - **Web**: `bun run web`
